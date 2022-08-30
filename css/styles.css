@@ -1,0 +1,477 @@
+/* For old browsers */
+@supports (not(--css: variables))
+{
+    .supports_error
+    {
+        display: flex !important;
+    }
+}
+
+/* For IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+{
+    .supports_error
+    {
+        display: flex !important;
+    }
+}
+
+
+@font-face {
+    font-family: 'Zen Kaku';
+    src: url('../fonts/ZenKakuGothicNew-Black.eot');
+    src: local('Zen Kaku Gothic New Black'), local('ZenKakuGothicNew-Black'),
+        url('../fonts/ZenKakuGothicNew-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZenKakuGothicNew-Black.woff2') format('woff2'),
+        url('../fonts/ZenKakuGothicNew-Black.woff') format('woff'),
+        url('../fonts/ZenKakuGothicNew-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Kaku';
+    src: url('../fonts/ZenKakuGothicNew-Medium.eot');
+    src: local('Zen Kaku Gothic New Medium'), local('ZenKakuGothicNew-Medium'),
+        url('../fonts/ZenKakuGothicNew-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZenKakuGothicNew-Medium.woff2') format('woff2'),
+        url('../fonts/ZenKakuGothicNew-Medium.woff') format('woff'),
+        url('../fonts/ZenKakuGothicNew-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Kaku';
+    src: url('../fonts/ZenKakuGothicNew-Light.eot');
+    src: local('Zen Kaku Gothic New Light'), local('ZenKakuGothicNew-Light'),
+        url('../fonts/ZenKakuGothicNew-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZenKakuGothicNew-Light.woff2') format('woff2'),
+        url('../fonts/ZenKakuGothicNew-Light.woff') format('woff'),
+        url('../fonts/ZenKakuGothicNew-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Kakuw';
+    src: url('../fonts/ZenKakuGothicNew-Bold.eot');
+    src: local('Zen Kaku Gothic New Bold'), local('ZenKakuGothicNew-Bold'),
+        url('../fonts/ZenKakuGothicNew-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZenKakuGothicNew-Bold.woff2') format('woff2'),
+        url('../fonts/ZenKakuGothicNew-Bold.woff') format('woff'),
+        url('../fonts/ZenKakuGothicNew-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Kaku';
+    src: url('../fonts/ZenKakuGothicNew-Regular.eot');
+    src: local('Zen Kaku Gothic New Regular'), local('ZenKakuGothicNew-Regular'),
+        url('../fonts/enKakuGothicNew-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ZenKakuGothicNew-Regular.woff2') format('woff2'),
+        url('../fonts/ZenKakuGothicNew-Regular.woff') format('woff'),
+        url('../fonts/ZenKakuGothicNew-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*------------------
+    Reset styles
+------------------*/
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    margin: 0;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+}
+
+img
+{
+    border-style: none;
+}
+
+textarea
+{
+    overflow: auto;
+}
+
+input,
+textarea,
+input:active,
+textarea:active,
+button
+{
+    margin: 0;
+
+    -webkit-border-radius: 0;
+            border-radius: 0;
+         outline: none transparent !important;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+            appearance: none;
+    -moz-outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    margin: 0;
+
+    -webkit-appearance: none;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+:focus
+{
+    outline: 0;
+}
+
+:hover,
+:active
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+
+
+::-ms-clear
+{
+    display: none;
+}
+
+
+
+/*-------------------
+    Global styles
+-------------------*/
+:root
+{
+    --bg: #fff;
+    --scroll_width: 17px;
+    --text_color: #1F383A;;
+    --font_size: 22px;
+    --font_size_title: 70px;
+    --font_family: 'Zen Kaku';
+}
+
+
+::selection
+{
+    color: #fff;
+
+    background: #de041d;
+}
+
+::-moz-selection
+{
+    color: #fff;
+
+    background: #de041d;
+}
+
+
+.clear
+{
+    clear: both;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+
+
+html
+{
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+}
+/*
+html.custom_scroll ::-webkit-scrollbar
+{
+    width: 10px;
+    height: 10px;
+
+    background-color: #ccc;
+}
+
+html.custom_scroll ::-webkit-scrollbar-thumb
+{
+    background-color: #de041d;
+}
+
+html.custom_scroll
+{
+    scrollbar-color: #de041d #ccc;
+    scrollbar-width: thin;
+}
+
+*/
+body
+{
+    color: var(--text_color);
+    font: var(--font_size) var(--font_family);
+
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height:         fill-available;
+}
+
+
+button
+{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    border: none;
+    background: none;
+}
+
+
+.wrap
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    min-width: 360px;
+    min-height: 100%;
+
+    background: var(--bg);
+}
+
+
+.main
+{
+    flex: 1 0 auto;
+}
+
+
+.cont
+{
+    width: 100%;
+    max-width: 1188px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+.lozad
+{
+    transition: opacity .5s linear;
+
+    opacity: 0;
+}
+
+.lozad.loaded
+{
+    opacity: 1;
+}
+
+
+.row
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.overlay
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .65;
+    background: #000;
+}
+
+
+
+.supports_error
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    text-align: center;
+
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.supports_error.show
+{
+    display: flex;
+}
+
+
+
+/*--------------
+    Fancybox
+--------------*/
+.fancybox__backdrop
+{
+    background: rgba(0,0,0,.6);
+}
+
+
+.fancybox__slide
+{
+    padding: 40px;
+}
+
+
+
+
+
+/*-------------------
+    Header START
+-------------------*/
+
+header {
+    position: relative;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0 21px;
+    margin-bottom: 57px;
+  }
+  .header_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;  
+  }
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: -5px;
+  }
+  ul.menu > li {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul.menu > li > a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 41px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  ul.menu > li:last-child > a {
+    margin-right: 0px;
+  }
+  ul.menu > li > a:hover {  
+    color: #335FFF;;
+  }
+  
+  .header_fixed {
+    position: fixed;
+    -webkit-animation: moveDown .5s;
+    animation: moveDown .5s;
+    background: #fff;
+  }
+  .header_fixed .link {
+    display: none;
+  }
+  .header_fixed .link {
+    width: 223px;
+    height: 39px;
+    line-height: 39px;
+    color: #fff;
+  }
+  .header_fixed .link:hover {
+    color: #fff;
+  }
