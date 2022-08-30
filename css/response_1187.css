@@ -1,7 +1,63 @@
-@media print, (max-width: 1187px)
-{
+@media print, (max-width: 1187px) {
 
+    :root {
+        --font_size_title: 65px;
+    }
+    .header_img img {
+        width: 100%;
+    }
+    header ul.menu > li > a {
+        margin-right: 25px;
+    }
 
+    .advantages_title,
+    .service_title,
+    .team_title,
+    .benefits_title,
+    .contacts_title {
+        font-size: var(--font_size_title);
+    }
+    .advantages_text p:first-child {
+        font-size: 24px;
+    }
+    .advantages_bottom-title {
+        font-size: 48px;
+        padding: 50px 30px;
+    }
+    .advantages_bottom-wrap {
+        padding-top: 165px;
+    }
+    .advantages_left-title {
+        font-size: 45px;
+    }
+    .team {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .benefits {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        margin-bottom: 180px;
+    }
+    .advantages_bottom-wrap {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .team_text {
+        font-size: 30px;
+    }
+    .benefits_img {
+        right: -102px;
+        width: 600px;
+        height: auto;
+        top: 211px;
+    }
+    .benefits_img img {
+        width: 100%;
+    }
+    .contacts_text {
+        font-size: 28px;
+    }
 
 
 

@@ -1,5 +1,137 @@
 @media print, (max-width: 767px) {
 
+    :root {
+        --font_size_title: 30px;
+    }
+    .header_wrap {
+        margin-bottom: 35px;
+    }
+    .header_title {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    .header_text {
+        font-size: 22px;
+    }
+    .advantages_title, 
+    .service_title, 
+    .team_title, 
+    .benefits_title, 
+    .contacts_title {
+        margin-bottom: 20px;
+    }
+    .advantages_text {
+        flex-direction: column;
+    }
+    .advantages_text p:first-child {
+        font-size: 18px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .advantages_text p:last-child {
+        font-size: 18px;
+    }
+    .advantages_bottom-title {
+        font-size: 25px;
+        padding: 15px 55px;
+        max-width: 590px;
+        margin: 0 auto -60px;
+    }
+    .advantages_bottom-wrap {
+        flex-direction: column;
+    }
+    .advantages_bottom-wrap {
+        margin-left: 0;
+    }
+    .advantages_bottom-wrap > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .advantages_left-title {
+        font-size: 23px;
+    }
+    .advantages_left-text {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .advantages_left {
+        margin-bottom: 20px;
+    }
+    .advantages_left a {
+        height: 50px;
+    }
+    .advantages_right-list li {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+    .team {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .benefits {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .advantages_bottom-wrap {
+        padding-top: 75px;
+        padding-bottom: 40px;
+    }
+    .service {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .service_items {
+        margin-left: 0px;
+    }
+    .service_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .service_item {
+        padding: 10px 15px 20px 15px;
+    }
+    .service_item-title {
+        font-size: 20px;
+        margin-bottom: 7px;
+        margin-top: 2px;
+    }
+    .service_item-text {
+        font-size: 17px;
+    }
+    .service_item .link {
+        font-size: 18px;
+    }
+    .team_text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    } 
+    .benefits_img {
+        display: none;
+    }
+    .contacts_phone {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .contacts_text {
+        font-size: 20px;
+        margin: 0 auto 15px;
+    }
+    .contacts_email {
+        font-size: 18px;
+    }
+    .contacts_adress {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    .map_wrap {
+        height: 275px;
+    } 
+    .benefits_text {
+        font-size: 20px;
+        margin-bottom: 20px;
+        max-width: 360px;
+    }
 
     
    

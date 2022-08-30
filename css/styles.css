@@ -307,9 +307,9 @@ button
 .cont
 {
     width: 100%;
-    max-width: 1188px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 15px;
 }
 
 
@@ -338,8 +338,7 @@ button
 
 
 
-.overlay
-{
+.overlay {
     position: fixed;
     z-index: 100;
     top: 0;
@@ -352,6 +351,7 @@ button
 
     opacity: .65;
     background: #000;
+
 }
 
 
@@ -414,10 +414,9 @@ button
 
 header {
     position: relative;
-    z-index: 101;
     padding-top: 59px;
     width: 100%;
-    margin-bottom: 36px;
+    margin-bottom: 31px;
     background: url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -428,7 +427,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; 
-    margin-bottom: 117px; 
+    margin-bottom: 114px; 
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -462,7 +461,7 @@ header ul.menu > li:last-child > a {
     margin-right: 0px;
 }
 header ul.menu > li > a:hover {  
-    color: #335FFF;;
+    color: #0b7b83;
 }
 .menu_btn {
     position: absolute;
@@ -480,6 +479,7 @@ header ul.menu > li > a:hover {
     width: 24px;
     height: 24px;
     margin-right: 7px;
+    margin-top: 4px;
 }
 .header_title {
     font-weight: 400;
@@ -501,6 +501,10 @@ header ul.menu > li > a:hover {
     color: #1F383A;
     margin-bottom: 12px;
 }
+.header_img img {
+    width: 100%;
+}
+
 
 
 
@@ -518,16 +522,16 @@ header ul.menu > li > a:hover {
 }
 .advantages_text {
     display: flex; 
-    margin-bottom: 130px;   
+    margin-bottom: 90px;   
 }
 .advantages_text p:first-child {
     font-weight: 500;
     font-size: 28px;
-    line-height: 130%;
+    line-height: 128%;
     letter-spacing: -0.02em;
     color: #1F383A;
     max-width: 634px;
-    margin-right: 54px;
+    margin-right: 58px;
 }
 .advantages_text p:last-child {
     font-weight: 400;
@@ -556,8 +560,8 @@ header ul.menu > li > a:hover {
     position: relative;
     display: flex;
     margin-left: -59px;
-    padding-top: 213px;
-    padding-bottom: 185px;
+    padding-top: 218px;
+    padding-bottom: 166px;
 }
 .advantages_bottom-wrap > * {
     width: calc(100%/2 - 59px);
@@ -650,20 +654,22 @@ header ul.menu > li > a:hover {
     align-items: stretch;
     justify-content: space-between;
     margin-left: -30px;
+    margin-bottom: -30px;
 }
 .service_items > * {
     margin-left: 30px;
+    margin-bottom: 30px;
     width: calc(100%/3 - 30px);
 }
 .service_item {
     background: rgba(171, 222, 182, .1);
     border-radius: 8px;
-    padding: 45px 35px 50px 45px;
+    padding: 15px 35px 50px 45px;
     display: flex;
     flex-direction: column;
 }
 .service_item-icon {
-    margin-bottom: 60px;
+    margin-left: -18px;
 }
 .service_item-title {
     font-weight: 500;
@@ -671,6 +677,7 @@ header ul.menu > li > a:hover {
     line-height: 140%;
     color: #FFFFFF;
     margin-bottom: 5px;
+    margin-top: 37px;
 }
 .service_item-text {
     font-weight: 400;
@@ -699,17 +706,13 @@ header ul.menu > li > a:hover {
 
 
 .team {
-    padding-top: 183px;
+    padding-top: 173px;
     padding-bottom: 183px;
-}
-.cont {
 }
 .team_wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-.team_info {
 }
 .team_title {
     font-weight: 500;
@@ -718,16 +721,17 @@ header ul.menu > li > a:hover {
     letter-spacing: -0.04em;
     color: #1F383A;
     position: relative;
-    margin-bottom: 49px;
+    margin-bottom: 38px;
+    display: inline-block;
 }
 .team_title:after {
     position: absolute;
     content: "";
     background: #CACECD;
     height: 1px;
-    width: 100%;
-    left: calc(100% - 430px);
-    top: 50%;
+    width: 172%;
+    left: 110%;
+    top: 60%;
 }
 .team_text {
     font-weight: 500;
@@ -768,8 +772,8 @@ header ul.menu > li > a:hover {
     content: "";
     width: 987px;
     height: 1083px;
-    bottom: -415px;
-    right: -350px;
+    bottom: -390px;
+    right: -320px;
     background: url(../images/team_bg.png);
     z-index: -1;
 }
@@ -778,10 +782,10 @@ header ul.menu > li > a:hover {
     content: "";
     width: 747px;
     height: 256px;
-    bottom: -132px;
+    bottom: -175px;
     right: -180px;
     background: url(../images/team_bg2.svg);
-    z-index: -1;
+    z-index: 0;
 }
 .team_img img {
     display: block;
@@ -799,7 +803,7 @@ header ul.menu > li > a:hover {
     background: url(../images/benefits_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 center;
+    background-position: center 0;
     position: relative;
     margin-bottom: 373px;
 }
@@ -826,8 +830,8 @@ header ul.menu > li > a:hover {
 }
 .benefits_img {
     position: absolute;
-    bottom: -100%;
-    left: 34%;
+    top: 175px;
+    right: -10px;
 }
 
 .benefits .link {
@@ -851,9 +855,13 @@ header ul.menu > li > a:hover {
     margin-left: 20px;
 }
 
+
+
+
+
 .contacts {
-}
-.cont {
+    z-index: 1;
+    position: relative;
 }
 .contacts_title {
     font-weight: 500;
@@ -907,7 +915,7 @@ header ul.menu > li > a:hover {
     overflow: hidden;
     max-width: 100%;
     width: 100%;
-    height: 404px;
+    height: 460px;
     margin-left: auto;
     margin-right: auto;
     transform: translateZ(0);

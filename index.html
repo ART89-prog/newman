@@ -29,6 +29,7 @@
 		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/styles.css">
 
+		<link rel="stylesheet" href="css/response_1350.css" media="print, (max-width: 1350px)">
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -44,21 +45,28 @@
 							<a href="#"><img src="images/logo.svg" alt="logo"></a>
 						</div>
 						<ul class="menu">
+							<div class="logo_mob" style="display: none;">
+								<a href="#"><img src="images/logo.svg" alt="logo"></a>
+							</div>
 							<li>
-								<a class="scroll" href="#about">Компания</a>                                    
+								<a href="#">Компания</a>                                    
 							</li>
 							<li>
-								<a class="scroll" href="#advantages">Услуги</a>
+								<a href="#">Услуги</a>
 							</li>
 							<li>
-								<a class="scroll" href="#cases">Контакты</a>
+								<a href="#">Контакты</a>
 							</li>
 							<li>
-								<a class="scroll" href="#steps">Клиентам</a>
+								<a href="#">Клиентам</a>
 							</li>
 							<li>
-								<a class="scroll" href="#steps">Кандидатам</a>
-							</li>					
+								<a href="#">Кандидатам</a>
+							</li>	
+							<a href="tel:89671667627" class="header_phone-mob" style="display: none;">
+								<svg class="icon"><use xlink:href="images/sprite.svg#phone"></use></svg>
+								<span>8 967 166-76-27</span>
+							</a>				
 						</ul>
 						<a href="tel:89671667627" class="header_phone">
 							<svg class="icon"><use xlink:href="images/sprite.svg#phone"></use></svg>
@@ -262,7 +270,7 @@
 					let myPlacemark = new ymaps.Placemark([55.810476,37.64507], {}, {
 						iconLayout : 'default#image',
 						iconImageHref : 'images/marker.svg',
-						iconImageSize : [63, 63],
+						iconImageSize : [66, 93],
 						/*iconImageOffset : [-116, -172]*/
 					})
 
