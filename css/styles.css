@@ -1361,6 +1361,8 @@ p.mb0 {
 .modal {
     padding: 84px 90px 103px 107px;
     display: none;
+    max-width: 1170px;
+    width: 100%;
 }
 .modal_title {
     margin-bottom: 8px;
