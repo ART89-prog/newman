@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Newman</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#DE041D">
+		<meta name="theme-color" content="#DE041D">
+
+		<!-- Подключение шрифтов с гугла -->
+	
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1350.css" media="print, (max-width: 1350px)">
+		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main about-page candidate-page">
+				<header>
+					<div class="header_wrap">
+						<div class="logo">
+							<a href="#"><img src="images/logo.svg" alt="logo"></a>
+						</div>
+						<ul class="menu">
+							<div class="logo_mob" style="display: none;">
+								<a href="#"><img src="images/logo.svg" alt="logo"></a>
+							</div>
+							<li>
+								<a href="#">Компания</a>                                    
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#" class="active">Контакты</a>
+							</li>
+							<li>
+								<a href="#">Клиентам</a>
+							</li>
+							<li>
+								<a href="#">Кандидатам</a>
+							</li>	
+							<a href="tel:89671667627" class="header_phone-mob" style="display: none;">
+								<svg class="icon"><use xlink:href="images/sprite.svg#phone"></use></svg>
+								<span>8 967 166-76-27</span>
+							</a>				
+						</ul>
+						<a href="tel:89671667627" class="header_phone">
+							<svg class="icon"><use xlink:href="images/sprite.svg#phone"></use></svg>
+							<span>8 967 166-76-27</span>
+						</a>
+						<button class="menu_btn">
+							<span></span>
+						</button>                        
+					</div>                    
+                </header>
+
+
+				<section class="contact">
+					<div class="cont">
+						<div class="contact-block_title title">Контакты</div>
+						<div class="contact_items">
+							<div class="contact_item">
+								<div class="contact_item-label">Телефон</div>
+								<a href="tel:89671667627" class="contact_item-name">8 967 166-76-27</a>
+								<div class="contact_item-description">Заказать звонок</div>								
+							</div>
+							<div class="contact_item">
+								<div class="contact_item-label">Электронная почта</div>
+								<a href="mailto:helpme@newman.com" class="contact_item-name">helpme@newman.com</a>
+								<div class="contact_item-description">Написать сообщение</div>								
+							</div>
+							<div class="contact_item">
+								<div class="contact_item-label">Адрес</div>
+								<div class="contact_item-name">Москва, ул. Староалексеевская, д. 5.</div>
+								<div class="contact_item-description">Без выходных, с 10:00 до 20:00</div>								
+							</div>
+						</div>
+					</div>
+				</section>
+
+				
+				<div class="map_wrap">
+					<div id="map"></div>					
+					<div class="cont">
+						<div class="contacts_title">
+							У вас есть вопросы?<br>
+							Свяжитесь с нами
+						</div>
+						<a href="tel:89671667627" class="contacts_phone">8 967 166-76-27</a>
+						<a href="mailto:helpme@newman.com" class="contacts_email">helpme@newman.com</a>
+						<div class="contacts_adress">г. Москва, ул. Староалексеевская, д. 5.</div>
+					</div>			
+				</div>
+
+		
+			</div>
+
+			<footer>
+				<div class="cont">
+					<div class="footer-text">&copy; NEWMAN. ALL RIGHT RESERVED. 2022</div>
+				</div>
+			</footer>
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+
+
+		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+		<script>
+			$(window).on('load', () => {
+				ymaps.ready(() => {
+					let myMap = new ymaps.Map('map', {
+						center: [55.810476,37.64507],
+						zoom: 16,
+						controls: []
+					})
+					
+					// Кастомный маркер
+					let myPlacemark = new ymaps.Placemark([55.810476,37.64507], {}, {
+						iconLayout : 'default#image',
+						iconImageHref : 'images/marker.svg',
+						iconImageSize : [66, 93],
+						/*iconImageOffset : [-116, -172]*/
+					})
+
+					myMap.geoObjects.add(myPlacemark)
+
+					myMap.controls.add('zoomControl', {
+						position : {
+							right : '20px',
+							top   : '20px'
+						}
+					})
+					myMap.behaviors.disable('scrollZoom')
+				})
+			})
+		</script>
+
+	</body>
+</html>

@@ -3,6 +3,19 @@
   .benefits_img {
     right: -275px;
   }
+  .modal {
+    padding: 50px;
+  }
+  .modal_item-name {
+    font-size: 24px;
+  }
+  .modal_item-label {
+    font-size: 20px;
+  }
+  .modal_text {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
 
 
 

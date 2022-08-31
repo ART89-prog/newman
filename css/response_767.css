@@ -132,7 +132,164 @@
         margin-bottom: 20px;
         max-width: 360px;
     }
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-    
+
+    .about_item {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }    
+    .about_title {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    .about_item-left {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .about_item-right p,
+    .text_block p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .about_item.bg {
+        padding: 28px 0 28px;
+    }
+    .about_item .right-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .about_item-right a {
+        font-size: 20px;
+    }
+
+    .steps_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .steps_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .steps_item:nth-child(4) .steps_item-number::after {
+        display: none;
+    }
+    .steps_item:nth-child(3) .steps_item-number::after {
+        display: block;
+    }
+    .steps_item:nth-child(6) .steps_item-number::after {
+        display: none;
+    }
+    .steps_item:nth-child(2) .steps_item-number::after {
+        display: none;
+    }
+    .steps_item-text {
+        font-size: 18px;
+    }
+    .steps_item button {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    .steps_item button .icon {
+        margin-left: -50px;
+    }
+
+    .why_items {
+        margin-left: 0px;
+        margin-bottom: -30px;
+    }
+    .why_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .title-little {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .why_item-title {
+        font-size: 20px;
+    }
+    .steps_item-number {
+        font-size: 36px;
+    }
+    .steps {
+        padding: 30px 0 30px;
+    }
+    .why {
+        padding: 30px 0 30px;
+        margin-top: 25px;
+    }
+    .candidate-bottom {
+        padding-bottom: 30px;
+    }
+    .candidate-page .client {
+        margin-bottom: 30px;
+    }
+
+    .candidate-page .why_items {
+        margin-left: 0px;
+    }
+    .candidate-page .why_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .candidate-bottom .candidate_img {
+        margin-bottom: 30px;
+    }
+    .candidate-bottom button {
+        font-size: 35px;
+    }
+    .candidate-bottom button .icon {
+        margin-top: 15px;
+    }
+    .contact {
+        padding-bottom: 30px;
+    }
+    .contact_item-label {
+        font-size: 18px;
+    }
+    .contact_item-name {
+        font-size: 22px;
+    }
+    .contact_item-description {
+        font-size: 16px;
+    }
+
+    .modal_text {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .modal_title {
+        margin-bottom: 12px;
+    }
+    .modal {
+        padding: 35px;
+    }
+    .modal_item-label {
+        font-size: 18px;
+    }
+    .modal_item-name {
+        font-size: 20px;
+    }
+    .modal_item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .fancybox__slide {
+        padding: 20px;
+    }
+
+
+
+
    
 }

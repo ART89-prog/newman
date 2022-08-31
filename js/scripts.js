@@ -1,31 +1,5 @@
 $(() => {
-    // Основной слайдер на главной
-    if ($('.first_section .swiper-container').length) {
-        new Swiper('.first_section .swiper-container', {
-            loop: true,
-            speed: 750,
-            watchSlidesVisibility: true,
-            slideActiveClass: 'active',
-            slideVisibleClass: 'visible',
-            spaceBetween: 0,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true,
-                bulletActiveClass: 'active'
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            }
-        })
-    }
-
-
-
-
-
+ 
     //Гамбургер меню
     $('header .menu_btn').click((e) => {
         e.preventDefault()
