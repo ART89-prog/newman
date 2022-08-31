@@ -79,10 +79,10 @@
     .about-page .map_wrap {
         height: 430px;
     }
-    .map_wrap .contacts_title {
+    .about-page .map_wrap .contact_title {
         font-size: 40px;
     }
-    .map_wrap .contacts_phone {
+    .about-page .map_wrap .contact_phone {
         font-size: 38px;
     }
     .steps_item button {
@@ -126,6 +126,13 @@
     .modal_title {
         margin-bottom: 12px;
     }
+
+
+    .services_item-left {
+        width: 210px;
+        font-size: 32px;
+    }
+
 
 
 
