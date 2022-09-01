@@ -454,15 +454,13 @@ header ul.menu > li > a {
     align-items: center;
     color: var(--text_color);
     margin-right: 44px;
-    border-bottom: 3px solid transparent;
-    transition: all .5s;
+    transition: all .3s;
 }
 header ul.menu > li:last-child > a {
     margin-right: 0px;
 }
 header ul.menu > li > a:hover {  
     color: #76B95B;
-    border-bottom: 3px solid #E6EAE9;
 }
 header ul.menu > li > a.active {
     color: #76B95B;
@@ -669,12 +667,13 @@ header ul.menu > li > a.active {
 .service_item {
     background: rgba(171, 222, 182, .1);
     border-radius: 8px;
-    padding: 15px 35px 50px 45px;
+    padding: 45px 35px 50px 45px;
     display: flex;
     flex-direction: column;
 }
 .service_item-icon {
-    margin-left: -18px;
+    width: 87px;
+    height: 87px;
 }
 .service_item-title {
     font-weight: 500;
@@ -682,7 +681,7 @@ header ul.menu > li > a.active {
     line-height: 140%;
     color: #FFFFFF;
     margin-bottom: 5px;
-    margin-top: 37px;
+    margin-top: 58px;
 }
 .service_item-text {
     font-weight: 400;
@@ -739,11 +738,14 @@ header ul.menu > li > a.active {
     top: 60%;
 }
 .team_text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 37px;
     line-height: 130%;
     color: var(--text_color);
     margin-bottom: 53px;
+}
+.team_text span {
+    font-weight: 500;
 }
 .team .link {
     width: 287px;
@@ -816,6 +818,7 @@ header ul.menu > li > a.active {
 .benefits_wrap {
     display: flex;
     justify-content: space-between;
+    position: relative; 
     max-width: 648px;
 }
 .benefits_title {
@@ -827,17 +830,42 @@ header ul.menu > li > a.active {
     margin-bottom: 35px;
 }
 .benefits_text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
     line-height: 130%;
     color: var(--text_color);
     margin-bottom: 45px;
 }
-.benefits_img {
-    position: absolute;
-    top: 175px;
-    right: -10px;
+.benefits_text span {
+    font-weight: 500;
 }
+.benefits_img {
+    width: 707px;
+    height: 526px; 
+    position: absolute;  
+    bottom: 0;
+    right: 0; 
+}
+/* .benefits_img:before {
+    position: absolute;
+    content: "";
+    width: 987px;
+    height: 1083px;
+    bottom: -390px;
+    right: -320px;
+    background: url(../images/team_bg.png);
+    z-index: -1;
+}
+.benefits_img:after {
+    position: absolute;
+    content: "";
+    width: 747px;
+    height: 256px;
+    bottom: -175px;
+    right: -180px;
+    background: url(../images/team_bg2.svg);
+    z-index: 1;
+} */
 
 .benefits .link {
     width: 263px;
@@ -971,8 +999,10 @@ footer {
     margin-bottom: 50px;
 }
 .about_item {
+    margin-bottom: 100px;    
+}
+.about_item .cont {
     display: flex;
-    margin-bottom: 100px;
     position: relative;
 }
 .about_item-left {
@@ -1003,32 +1033,17 @@ p.fw500 {
 }
 .about_item.bg {
     position: relative;
-    z-index: 1;
     padding: 126px 0 150px;
-}
-.about_item.bg::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 2000px);
-    height: 100%;
-    right: -50%;
-    top: 0;
-    background: url(../images/about_bg2.png);
+    background: url(../images/about_bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
 }
-.about_item.bg2::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    right: -50%;
-    top: 0;
+.about_item.bg2 {
+    position: relative;   
     background: url(../images/about_bg3.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
+    background-position: top right;
+    padding-top: 65px;
 }
 .about_item .right-title {
     font-weight: 500;
@@ -1049,12 +1064,15 @@ p.fw500 {
     width: calc(100%/3 - 40px);
 }
 .right-item_text {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 19px;
     line-height: 140%;
     letter-spacing: -0.02em;
     color: #3D5C57;
     margin-top: 25px;
+}
+.right-item_text span {
+    font-weight: 500;
 }
 p.mb0 {
     margin-bottom: 0;
@@ -1064,6 +1082,10 @@ p.mb0 {
     font-size: 34px;
     line-height: 140%;
     color: #76B95B;
+}
+.about .right-item_icon {
+    width: 64px;
+    height: 64px;
 }
 
 
