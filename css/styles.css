@@ -162,6 +162,7 @@ input[type=number]
 :focus
 {
     outline: 0;
+    display: none;
 }
 
 :hover,
@@ -999,7 +1000,8 @@ footer {
     margin-bottom: 50px;
 }
 .about_item {
-    margin-bottom: 100px;    
+    margin-bottom: 100px;  
+    display: flex;  
 }
 .about_item .cont {
     display: flex;
@@ -1021,6 +1023,9 @@ footer {
     line-height: 140%;
     color: #3D5C57;
     margin-bottom: 25px;
+}
+.services_item-right p span {
+    font-weight: 500;
 }
 p.fw500 {
     font-weight: 500;
@@ -1131,6 +1136,7 @@ p.mb0 {
     color: var(--text_color);
     text-align: start;
     margin-bottom: 14px;
+    text-decoration: none;
 }
 .about-page .map_wrap .contact_adress {
     font-weight: 400;
@@ -1442,6 +1448,7 @@ p.mb0 {
     display: flex;
     margin-bottom: 210px;
     position: relative;
+    z-index: 1;
 }
 .services_item-left {
     width: 297px;
@@ -1464,6 +1471,8 @@ p.mb0 {
 .services_items .link {
     display: flex;
     align-items: center;
+    z-index: 3;
+    position: relative;
 }
 .link-keys {
     font-weight: 500;
@@ -1535,8 +1544,8 @@ p.mb0 {
 }
 .services_item:nth-child(1) .services_item-left-img {
     position: relative;
-    z-index: 1;
     margin-right: -88px;
+    z-index: -1;
 }
 .services_item:nth-child(1) .services_item-left-img:before {
     position: absolute;
@@ -1584,7 +1593,7 @@ p.mb0 {
     margin-left: 135px;
 }
 .services_item-right-item {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .services_item-list-title {
     font-weight: 500;
@@ -1600,7 +1609,7 @@ p.mb0 {
     padding-left: 17px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 140%;
+    line-height: 160%;
     color: #3D5C57;
     position: relative;
 }
@@ -1614,3 +1623,31 @@ p.mb0 {
     top: 13px;
     left: 0px;
 }
+.services_item.bg {
+    background: #F7FCF5;
+    padding-top: 109px;
+    position: relative;
+}
+.services_item.bg::after {
+    position: absolute;
+    content: "";
+    width: 2000px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: #F7FCF5;
+}
+.services_item.bg::before {
+    position: absolute;
+    content: "";
+    width: 2000px;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    background: #F7FCF5;
+}
+
+.candidate-page .why_item-text {
+    margin-top: 13px;
+}
+

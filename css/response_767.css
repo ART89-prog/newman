@@ -138,7 +138,8 @@
     }
 
 
-    .about_item .cont {
+    .about_item .cont,
+    .about_item {
         flex-direction: column;
     }
     .title {
