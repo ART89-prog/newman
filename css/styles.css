@@ -844,29 +844,34 @@ header ul.menu > li > a.active {
     width: 707px;
     height: 526px; 
     position: absolute;  
-    bottom: 0;
-    right: 0; 
+    bottom: -407px;
+    right: -590px;
+    z-index: 2;
 }
-/* .benefits_img:before {
+.benefits-wrap_img {
+    position: relative;
+    z-index: 2;
+}
+.benefits-wrap_img:before {
     position: absolute;
     content: "";
-    width: 987px;
-    height: 1083px;
-    bottom: -390px;
+    width: 1233px;
+    height: 1816px;
+    bottom: -700px;
     right: -320px;
-    background: url(../images/team_bg.png);
+    background: url(../images/benefits_bg2.png);
     z-index: -1;
 }
-.benefits_img:after {
+.benefits-wrap_img:after {
     position: absolute;
     content: "";
-    width: 747px;
-    height: 256px;
-    bottom: -175px;
+    width: 763px;
+    height: 184px;
+    bottom: -70px;
     right: -180px;
-    background: url(../images/team_bg2.svg);
+    background: url(../images/sign5.svg);
     z-index: 1;
-} */
+}
 
 .benefits .link {
     width: 263px;
@@ -894,7 +899,7 @@ header ul.menu > li > a.active {
 
 
 .contacts {
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 .contacts_title {
@@ -1513,6 +1518,8 @@ p.mb0 {
     position: relative;
     z-index: 1;
     float: right;
+    width: 343px;
+    height: 246px;
 }
 .services_item:nth-child(2) .services_item-left-img:before {
     position: absolute;
@@ -1546,6 +1553,8 @@ p.mb0 {
     position: relative;
     margin-right: -88px;
     z-index: -1;
+    width: 381px;
+    height: 283px;
 }
 .services_item:nth-child(1) .services_item-left-img:before {
     position: absolute;
@@ -1649,5 +1658,9 @@ p.mb0 {
 
 .candidate-page .why_item-text {
     margin-top: 13px;
+}
+.why_item-icon {
+    width: 64px;
+    height: 64px;
 }
 

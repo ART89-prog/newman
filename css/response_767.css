@@ -89,7 +89,7 @@
         margin-left: 0px;
     }
     .service_item {
-        padding: 10px 15px 20px 15px;
+        padding: 15px 15px 20px 15px;
     }
     .service_item-title {
         font-size: 20px;
@@ -220,6 +220,9 @@
     .why_item-title {
         font-size: 20px;
     }
+    .why_item-title br {
+        display: none;
+    }
     .steps_item-number {
         font-size: 36px;
     }
@@ -294,11 +297,21 @@
     .link-message {
         font-size: 18px;
     }
+    .services_item:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .services_item.bg {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
     .services_item-left {
         font-size: 22px;
     }
     .services_items {
         margin-top: 25px;
+    }
+    .about_item.bg2 {
+        padding-top: 30px;
     }
     .services_item, 
     .services_item:nth-child(1), 
@@ -331,7 +344,9 @@
         margin-bottom: 10px;
     }
 
-
+    .about-page {
+        background-position: -30% 0;
+    }
     .about-page .map_wrap .contact_title {
         font-size: 26px;
     }

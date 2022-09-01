@@ -46,20 +46,20 @@
     .team_text {
         font-size: 30px;
     }
-    .benefits_img {
-        right: -102px;
-        width: 600px;
-        height: auto;
-        top: 211px;
-    }
-    .benefits_img img {
-        width: 100%;
-    }
+
     .contacts_text {
         font-size: 28px;
     }
     .advantages_bottom-title {
         margin: 0 auto -100px;
+    }
+
+
+    .benefits_img {
+        right: -334px;
+        width: 490px;
+        height: auto;
+        top: 330px;
     }
 
     .about_title {

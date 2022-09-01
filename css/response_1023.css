@@ -175,7 +175,7 @@
         margin-left: 20px;
     }
     .service_item {
-        padding: 15px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
     }
     .service_item-title {
         font-size: 22px;
@@ -211,10 +211,16 @@
         margin-bottom: 25px;
         max-width: 470px;
     }
+    .benefits {
+        background-position: 50% 0;
+    }
     .benefits_img {
-        right: -53px;
-        width: 430px;
-        top: 190px;
+        right: -84px;
+        width: 387px;
+        top: 244px;
+    }
+    .benefits-wrap_img:before {
+        width: 730px;
     }
     .contacts_text {
         font-size: 22px;
@@ -269,6 +275,7 @@
         font-size: 20px;
         margin-bottom: 15px;
     }
+
     .about_item-right a {
         font-size: 22px;
     }
@@ -440,6 +447,10 @@
         font-size: 22px;
     }
 
+    .services_item.bg {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
     .services_item {
         flex-direction: column;
     }

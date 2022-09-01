@@ -1,8 +1,6 @@
 @media print, (max-width: 1350px) {
 
-  .benefits_img {
-    right: -275px;
-  }
+
   .modal {
     padding: 50px;
   }
@@ -30,7 +28,25 @@
   .services_item:nth-child(2) .services_item-left-img:after {
     top: -325px;
     left: -421px;
-}
+  }
+  .benefits_img {
+    right: -518px;
+    width: 600px;
+    height: auto;
+    top: 425px;
+  }
+  .benefits_info {
+      z-index: 2;
+  }
+  .benefits-wrap_img:before {
+      width: 925px;
+  }
+  .benefits_img img {
+    width: 100%;
+  }
+  .benefits {
+    margin-bottom: 270px;
+  }
 
 
 
