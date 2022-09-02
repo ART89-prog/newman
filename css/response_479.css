@@ -64,8 +64,7 @@
     .services {
         padding-bottom: 30px;
     }
-    .services_item:nth-child(1) .services_item-left-img img,
-    .services_item:nth-child(2) .services_item-left-img img {
+    .services_item:nth-child(1) .services_item-left-img img {
         width: 100%;
         height: auto;
     }

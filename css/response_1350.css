@@ -19,15 +19,25 @@
     margin-right: 0;
   }
   .services_item:nth-child(2) .services_item-left-img {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 30px;
-  }
+    float: none;
+    width: 190px;
+    z-index: -1;
+}
   .services_item:nth-child(2) .services_item-left-img img {
     width: 100%;
   }
+  .services_item:nth-child(2) .services_item-left-img:before {
+    width: 146px;
+    height: 35px;
+    bottom: 102px;
+    left: 3px;
+    background-size: cover;
+}
   .services_item:nth-child(2) .services_item-left-img:after {
     top: -325px;
-    left: -421px;
+    left: -497px;
   }
   .benefits_img {
     right: -518px;
